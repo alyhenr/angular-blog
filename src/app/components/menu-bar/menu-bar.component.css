@@ -1,0 +1,25 @@
+.container__menu-bar {
+    width: 85%;
+
+    margin: 20px auto 0;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container__menu-bar>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__menu-bar li {
+    list-style: none;
+}
+
+
+.container__menu-bar li>a,
+li>span {
+    color: white;
+}

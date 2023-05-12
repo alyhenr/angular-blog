@@ -1,0 +1,25 @@
+.container__main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+
+    width: fit-content;
+
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.main-card__pic>img {
+    border-radius: 5px;
+}
+
+.main-card__title>h1 {
+    font-size: 28px;
+}
+
+.main-card__par>p {
+    font-size: 16px;
+    color: grey;
+}

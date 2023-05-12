@@ -1,0 +1,36 @@
+.container__small-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+
+    max-width: 650px;
+    width: fit-content;
+
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.container__small-card img {
+    border-radius: 5px;
+}
+
+.container__small-card h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container__small-card p {
+    font-size: 14px;
+    color: grey;
+}
+
+.small-card__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 10px;
+}
