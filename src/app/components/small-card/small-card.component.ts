@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-card.component.css'],
 })
 export class SmallCardComponent {
-  image: string = 'https://wallpaperaccess.com/full/2500093.jpg';
-  title: string = 'Title Placeholder';
-  textContent: string = 'Paragraph Placeholder';
+  @Input()
+  imageUrl: string = '';
+  @Input()
+  title: string = '';
+  @Input()
+  textContent: string = '';
+
+  constructor() {}
+
+  ngOnInit() {
+    console.log('small card');
+  }
 }

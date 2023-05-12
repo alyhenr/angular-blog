@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-card',
@@ -6,8 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-card.component.css'],
 })
 export class MainCardComponent {
-  image: string =
-    'https://img.freepik.com/free-photo/vivid-transparent-orange-autumn-leaf_23-2148239677.jpg';
-  title: string = 'Title Placeholder';
-  textContent: string = 'Paragrapgh Placeholder';
+  @Input()
+  imageUrl: string = '';
+  @Input()
+  title: string = '';
+  @Input()
+  textContent: string = '';
+
+  constructor() {}
+
+  ngOnInit(): void {
+    console.log('ngOnInit');
+  }
 }
