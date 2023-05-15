@@ -1,9 +1,11 @@
 <div class="container__small-card">
-    <div class="small-card__pic">
-        <img src="{{ imageUrl }}" alt="img" width="200px" height="120px">
-    </div>
-    <div class="small-card__text-content">
-        <p>{{ textContent }}</p>
-        <h1>{{ title }}</h1>
-    </div>
+    <a [routerLink]="['content', id]">
+        <div class="small-card__pic">
+            <img src="{{ imageUrl }}" alt="img" width="200px" height="120px">
+        </div>
+        <div class="small-card__text-content">
+            <p>{{ textContent }}</p>
+            <h1>{{ title }}</h1>
+        </div>
+    </a>
 </div>

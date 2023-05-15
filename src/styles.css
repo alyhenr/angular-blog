@@ -16,3 +16,12 @@ a {
     text-transform: none;
     text-decoration-color: none;
 }
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}

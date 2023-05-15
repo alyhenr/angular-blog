@@ -1,4 +1,4 @@
-.container__small-card {
+.container__small-card>a {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
